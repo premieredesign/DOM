@@ -1,17 +1,5 @@
-/*
-Create and link a JavaScript file. 
+// Create and link a JavaScript file.
 
-
-
-
-● Find all the <li>s and log their text content to the console.
-● Set the href of the link to "https://www.example.com" and update the text to say
-"somewhere" instead of "nowhere".
-● Set the "display" CSS property of the "hide-me" paragraph to "none".
-● Set the "display" CSS property of the "show-me" paragraph to "block".
-● Get the text that the user enters into the "name" input box and use it to set a welcome
-message in the <h1>, e.g., "Hello Grant!".
-*/
 // Create a function named “main”. The HTML is already set up to
 // call this function when the “Action!!!” button is clicked.
 // Within the main function:
@@ -23,4 +11,27 @@ const main = () => {
 	document.querySelector('#shrink-me').classList.remove('big');
 
 	// ● Find all the <li>s and log their text content to the console.
+
+	let listItems = document.querySelectorAll('li');
+	listItems.forEach(item => {
+		console.log(item);
+	});
+
+	// ● Set the href of the link to "https://www.example.com" and update the text to say "somewhere" instead of  nowhere".
+	document.querySelector('.link').setAttribute('href', 'https://www.example.com');
+	document.querySelector('.link').innerHTML = 'somewhere';
+
+	// ● Set the "display" CSS property of the "hide-me" paragraph to "none".
+	document.querySelector('#hide-me').style.display = 'none';
+
+	// ● Set the "display" CSS property of the "show-me" paragraph to "block".
+	document.querySelector('#show-me').style.display = 'block';
+
+	// ● Get the text that the user enters into the "name" input box and use it to set a welcome message in the <h1>, e.g., "Hello Grant!".
+	let greeting = () => {
+		let x = document.querySelector('#name');
+		let name = x.value;
+		document.querySelector('h1').innerHTML = 'Hello ' + name + '!';
+	};
+	greeting();
 };
