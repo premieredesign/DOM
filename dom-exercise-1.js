@@ -1,11 +1,9 @@
 /*
 Create and link a JavaScript file. 
 
-Create a function named “main”. The HTML is already set up to
-call this function when the “Action!!!” button is clicked.
-Within the main function:
-● Add the "big" class to the "grow-me" paragraph.
-● Remove the "big" class to the "shrink-me" paragraph.
+
+
+
 ● Find all the <li>s and log their text content to the console.
 ● Set the href of the link to "https://www.example.com" and update the text to say
 "somewhere" instead of "nowhere".
@@ -14,5 +12,15 @@ Within the main function:
 ● Get the text that the user enters into the "name" input box and use it to set a welcome
 message in the <h1>, e.g., "Hello Grant!".
 */
+// Create a function named “main”. The HTML is already set up to
+// call this function when the “Action!!!” button is clicked.
+// Within the main function:
+const main = () => {
+	// Add the "big" class to the "grow-me" paragraph.
+	document.querySelector('#grow-me').className = 'big';
 
-let main = () => {};
+	// ● Remove the "big" class to the "shrink-me" paragraph.
+	document.querySelector('#shrink-me').classList.remove('big');
+
+	// ● Find all the <li>s and log their text content to the console.
+};
