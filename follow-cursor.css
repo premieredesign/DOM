@@ -1,5 +1,3 @@
-/* strip default margin and padding
-move the h1 to the middle of the screen */
 body {
 	margin: 0;
 	padding: 0;
@@ -10,14 +8,14 @@ body {
 	overflow: hidden;
 }
 
-/* create the circle */
 .circle {
 	position: absolute;
-	width: 75px;
 	height: 75px;
-	border: 1px solid black;
-	border-radius: 50%;
+	width: 75px;
+	border: 2px blue solid;
+	box-sizing: border-box;
 	transition: 0.2s ease-out;
+	border-radius: 50%;
 	animation: fade 1s 1;
 }
 
@@ -25,7 +23,6 @@ h1 {
 	font-size: 75px;
 }
 
-/* use this if you don't use the trails
 h1:hover ~ .circle {
 	width: 200px;
 	height: 200px;
@@ -40,7 +37,7 @@ h1:hover ~ .circle {
 	100% {
 		transform: translate(-50%, -50%) rotate(360deg);
 	}
-} */
+}
 
 @keyframes fade {
 	0% {
