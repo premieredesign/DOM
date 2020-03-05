@@ -64,29 +64,28 @@ bodyChange.addEventListener('load', change);
 
 */
 
-// let getAtt = document.querySelector('.attributesButton');
-// let w3r = document.querySelector('#w3r');
+let getAtt = document.querySelector('.attributesButton');
+let w3r = document.querySelector('#w3r');
 
-// let hrefVal = w3r.getAttribute('href');
-// let hreflangVal = w3r.getAttribute('hreflang');
-// let relVal = w3r.getAttribute('rel');
-// let targetVal = w3r.getAttribute('target');
-// let typeVal = w3r.getAttribute('type');
+let href = w3r.getAttribute('href');
+let hrefLang = w3r.getAttribute('hreflang');
+let rel = w3r.getAttribute('rel');
+let target = w3r.getAttribute('target');
+let type = w3r.getAttribute('type');
 
-// let getAttributes = () => {
-// 	console.log(hrefVal, hreflangVal, relVal, targetVal, typeVal);
-// };
+let getAttributes = () => {
+	console.log(`href: ${href}\n hreflang: ${hrefLang}\n rel: ${rel}\n Target: ${target}\nType: ${type}`);
+};
 
-// getAtt.addEventListener('click', getAttributes);
-//
+getAtt.addEventListener('click', getAttributes);
 
-const button = document.getAttributes(e);
-e.getElementById('w3r');
-button.addEventListener('click', () => {
-	console.log(
-		`href${href.value}, hreflang${hreflang.value}, rel${rel.value}, target${target.value}, type: ${type.value}`
-	);
-});
+// const button = document.getAttributes(e);
+// e.getElementById('w3r');
+// button.addEventListener('click', () => {
+// 	console.log(
+// 		`href${href.value}, hreflang${hreflang.value}, rel${rel.value}, target${target.value}, type: ${type.value}`
+// 	);
+// });
 
 /*
 5. Write a javascript function to get the width and height of the window (any time the window is resized)
