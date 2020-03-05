@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="dom-exercise-2.css" />
+		<title>DOM Exercise 2</title>
+	</head>
+	<body>
+		<div class="form-container">
+			<form id="food-form">
+				<div class="input-container">
+					<label for="food">Name:</label>
+					<input type="text" name="food" id="food-input" />
+				</div>
+				<div class="radio-inputs">
+					<label for="">Type:</label>
+					<input type="radio" name="fruitOrVeggies" id="fruitInput" value="fruit" />
+					<label for="fruits">Fruit</label>
+					<input type="radio" name="fruitOrVeggies" id="veggiesInput" value="veggies" />
+					<label for="veggies">Veggies</label>
+				</div>
+				<button id="submit" type="button">Add</button>
+			</form>
+
+			<div class="two-lists">
+				<div class="columns">
+					<h3>Fruits</h3>
+					<ol id="fruits"></ol>
+				</div>
+				<div class="columns">
+					<h3>Veggies</h3>
+					<ol id="veggies"></ol>
+				</div>
+			</div>
+		</div>
+
+		<script src="dom-exercise-2.js"></script>
+	</body>
+</html>

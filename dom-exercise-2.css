@@ -1,0 +1,37 @@
+.form-container {
+	margin: auto;
+	width: 500px;
+	padding: 10px;
+}
+#form {
+	display: block;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 500px;
+	margin: auto;
+	padding: 10px;
+}
+
+#food {
+	width: 180px;
+}
+
+.input-container,
+.radio-inputs {
+	padding: 10px 15px;
+}
+
+button {
+	margin: 5px 15px;
+}
+
+.two-lists {
+	margin: auto;
+	display: grid;
+	padding: 10px;
+	grid-template-columns: 50% 50%;
+}
+
+.columns {
+	width: 200px;
+}
