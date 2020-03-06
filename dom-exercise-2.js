@@ -34,8 +34,8 @@ function fruitSort() {
 	if (radioValue() === 'fruit') {
 		document.querySelector('#fruits').appendChild(newItem);
 	} else {
+		document.querySelector('#veggies').appendChild(newItem);
 	}
-	document.querySelector('#veggies').appendChild(newItem);
 
 	foodInput.value = '';
 }
