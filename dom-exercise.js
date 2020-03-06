@@ -67,14 +67,21 @@ bodyChange.addEventListener('load', change);
 let getAtt = document.querySelector('.attributesButton');
 let w3r = document.querySelector('#w3r');
 
-let href = w3r.getAttribute('href');
-let hrefLang = w3r.getAttribute('hreflang');
-let rel = w3r.getAttribute('rel');
-let target = w3r.getAttribute('target');
-let type = w3r.getAttribute('type');
+// let href = w3r.getAttribute('href');
+// let hrefLang = w3r.getAttribute('hreflang');
+// let rel = w3r.getAttribute('rel');
+// let target = w3r.getAttribute('target');
+// let type = w3r.getAttribute('type');
 
 let getAttributes = () => {
-	console.log(`href: ${href}\n hreflang: ${hrefLang}\n rel: ${rel}\n Target: ${target}\nType: ${type}`);
+	console.log(
+		w3r.getAttribute('hreflang'),
+		w3r.getAttribute('href'),
+		w3r.getAttribute('rel'),
+		w3r.getAttribute('target'),
+		w3r.getAttribute('type')
+	);
+	// console.log(`href: ${href}\n hreflang: ${hrefLang}\n rel: ${rel}\n Target: ${target}\nType: ${type}`);
 };
 
 getAtt.addEventListener('click', getAttributes);
