@@ -13,25 +13,20 @@ function fruitSort() {
 	// add text into li
 	newItem.appendChild(text);
 
-	let radioValue = () => {
-		choice = document.getElementsByName('fruitOrVeggies');
+	// let radioValue = () => {
+	// 	choice = document.getElementsByName('fruitOrVeggies');
 
-		for (i of choice) {
-			if (i.checked) {
-				return i.value;
-			}
-		}
-	};
-	// *** This works
-	// if (radioValue() === 'fruit') {
-	// 	console.log(`GOT IT!!!`);
-	// } else {
-	// 	console.log(`NOPE`);
-	// }
+	// 	for (i of choice) {
+	// 		if (i.checked) {
+	// 			return i.value;
+	// 		}
+	// 	}
+	// };
 
-	// *** this does not
+	let radioValue = document.querySelector('input[name="fruitOrVeggies"]:checked').value;
+
 	// add newItem to the ol
-	if (radioValue() === 'fruit') {
+	if (radioValue === 'fruit') {
 		document.querySelector('#fruits').appendChild(newItem);
 	} else {
 		document.querySelector('#veggies').appendChild(newItem);

@@ -13,8 +13,11 @@ const main = () => {
 	// ● Find all the <li>s and log their text content to the console.
 
 	let listItems = document.querySelectorAll('li');
+	// for (let items of listItems) {
+	// 	console.log(items.textContent);
+	// }
 	listItems.forEach(item => {
-		console.log(item);
+		console.log(item.innerHTML);
 	});
 
 	// ● Set the href of the link to "https://www.example.com" and update the text to say "somewhere" instead of  nowhere".
