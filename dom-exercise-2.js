@@ -26,11 +26,16 @@ function fruitSort() {
 	let radioValue = document.querySelector('input[name="fruitOrVeggies"]:checked').value;
 
 	// add newItem to the ol
-	if (radioValue === 'fruit') {
-		document.querySelector('#fruits').appendChild(newItem);
-	} else {
-		document.querySelector('#veggies').appendChild(newItem);
-	}
+
+	radioValue === 'fruit'
+		? document.querySelector('#fruits').appendChild(newItem)
+		: document.querySelector('#veggies').appendChild(newItem);
+
+	// if (radioValue === 'fruit') {
+	// 	document.querySelector('#fruits').appendChild(newItem);
+	// } else {
+	// 	document.querySelector('#veggies').appendChild(newItem);
+	// }
 
 	foodInput.value = '';
 }
